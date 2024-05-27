@@ -1,14 +1,14 @@
 
-valores = []
+personas =[]
 
 for i in range(3):
-    valor = input(f"Introduce el valor {i + 1}: ")
-    valores.append(valor)
+    cualidades = []
+    nombre = input(f"Ingrese el nombre {i+1}: ")
+    cualidades.append(nombre)
+    apellido_paterno = input(f"Ingrese el apellido paterno {i+1}: ")
+    cualidades.append(apellido_paterno)
+    apellido_materno = input(f"Ingrese el apellido materno {i+1}: ")
+    cualidades.append(apellido_materno)
 
-
-if len(valores) == 3:
-    print("Los valores introducidos son:")
-    for valor in valores:
-        print(valor)
-else:
-    print("No se han introducido suficientes valores.")
+    personas.append(cualidades)
+    print(personas)
